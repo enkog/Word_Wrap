@@ -1,3 +1,25 @@
 // Place all the styles related to the Wrappers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    h4 {
+      margin-bottom: 50px;
+    }
+
+    form label {
+      margin-bottom: 15px;
+    }
+  }
+}
