@@ -1,5 +1,5 @@
 class WrappersController < ApplicationController
-  def new
+  def newz
   end
 
   def create
