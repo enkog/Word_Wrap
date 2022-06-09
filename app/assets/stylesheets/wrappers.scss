@@ -12,14 +12,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff !important;
 
   .wrapper {
-    h4 {
+    color: #fff;
+
+    h1 {
       margin-bottom: 50px;
+      font-style: italic;
+      color: #3a7ca5;
+    }
+
+    .btn {
+      background: #3a7ca5;
+      color: #fff;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    form {
+      background-color: #2f6690;
+      padding: 40px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      border-radius: 10px;
     }
 
     form label {
       margin-bottom: 15px;
+      font-size: 18px;
+    }
+  }
+
+  .result-container {
+    .result-header {
+      h3, a {color: #3a7ca5 !important;}
+    }
+
+    .result {
+      margin: 30px 20px;
+      border: 1px solid #ccc;
+      width: 900px;
+      height: 500px;
+      overflow-x: auto;
+      overflow-y: auto;
+      white-space: nowrap;
+      background-color: #2f6690;
+      padding: 40px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      border-radius: 10px;
+      color: #fff;
     }
   }
 }

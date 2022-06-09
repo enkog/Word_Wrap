@@ -1,20 +1,20 @@
 <div class="container">
   <div class="wrapper">
-    <h4 class="text-center">Word Wrap</h4>
+    <h1 class="text-center">Word Wrap</h1>
 
     <%= form_with url: '/wrappers' do |form| %>
       <div class="form-group mt-4 w-50">
         <%= form.label "Enter column number" %>
-        <%= form.number_field :col_size, min: 0, required: true, class: "form-control" %>
+        <%= form.number_field :col_size, min: 0, required: true, class: "form-control form-control-lg" %>
       </div>
 
       <div class="form-group mt-4">
         <%= form.label "Enter string to wrap" %>
-        <%= form.text_field :input_str, required: true, class: "form-control" %>
+        <%= form.text_field :input_str, required: true, class: "form-control form-control-lg" %>
       </div>
 
-      <div class="mt-4 text-end">
-        <%= form.submit "Wrap String", class: "btn btn-primary" %>
+      <div class="mt-5 text-end">
+        <%= form.submit "Wrap String", class: "btn btn-lg" %>
       </div>
     <%end%>
   </div>

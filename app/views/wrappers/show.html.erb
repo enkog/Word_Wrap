@@ -1,5 +1,8 @@
-<div>
-  <%= sanitize @wrapped_str, tags: %w(br) %>
+<div class="result-container">
+  <div class="result-header d-flex justify-content-between align-items-center my-5 fs-5">
+    <h3>RESULT</h3>
+    <%= link_to 'Back', root_path, class: "text-decoration-none" %>
+  </div>
+  <div class="result p-2"><%= sanitize @wrapped_str, tags: %w(br) %></div>
+  
 </div>
-
-<%= link_to 'Back', root_path %>
