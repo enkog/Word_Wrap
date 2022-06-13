@@ -10,11 +10,6 @@
 - Embedded Ruby(ERB) template
 - Rspec
 - rubocop
-- 
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
 
 ## Getting Started
 

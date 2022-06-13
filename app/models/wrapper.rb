@@ -4,10 +4,10 @@ class Wrapper
   # create static method
   def self.wrap(col_size, input_str)
     # handle null input
-    return LINE_BREAK if input_str.length.zero?
+    return '' if input_str.length.zero?
 
     # do nothing for input not longer than col_size
-    return input_str << LINE_BREAK if input_str.length <= col_size
+    return input_str if input_str.length <= col_size
 
     # initialize variables
     line_str = ''
@@ -24,9 +24,9 @@ class Wrapper
       total_line_len = line_str.length + word.length
 
       # break at word boundary
-      if total_line_len > col_size
+      if total_line_len > col_size && !line_str.length.zero?
         # update result
-        full_str << line_str << LINE_BREAK
+        full_str << line_str.strip << LINE_BREAK
         # reset for new line
         line_str = ''
       end
@@ -36,7 +36,7 @@ class Wrapper
     end
 
     # append last line to result if exists
-    full_str << line_str if line_str.length.positive?
+    full_str << line_str.strip if line_str.length.positive?
 
     # return result
     full_str
