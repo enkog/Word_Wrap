@@ -29,6 +29,7 @@ git clone https://github.com/enkog/Word_Wrap.git
 ```
 
 - Change to the project directory by entering `cd Word_Wrap` in the terminal
+- Next run `npm install` to install the necessary dependencies
 - Next run `bundle install` to install the necessary dependencies
 
 ### Usage
