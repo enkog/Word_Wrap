@@ -10,15 +10,15 @@ RSpec.describe Wrapper, type: :model do
     expect(Wrapper.wrap(12, 'hello')).to eq('hello')
   end
 
-  it 'splits long line on whitespace' do 
+  it 'splits long line on whitespace' do
     expect(Wrapper.wrap(2, 'This is a long sentence')).to eq('This<br>is<br>a<br>long<br>sentence')
   end
 
-  it 'wraps at the space between multiple words' do 
+  it 'wraps at the space between multiple words' do
     expect(Wrapper.wrap(6, 'ruby ruby ruby')).to eq('ruby<br>ruby<br>ruby')
   end
 
-  it 'wraps at the second space' do 
+  it 'wraps at the second space' do
     expect(Wrapper.wrap(11, 'ruby ruby ruby')).to eq('ruby ruby<br>ruby')
   end
 

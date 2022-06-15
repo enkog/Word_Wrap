@@ -10,7 +10,6 @@ RSpec.describe WrappersController, type: :controller do
   end
 end
 
-
 RSpec.describe 'Form Management', type: :feature do
   let(:wrapped_str) { Wrapper.wrap(4, 'This is a long sentence') }
 
@@ -21,11 +20,11 @@ RSpec.describe 'Form Management', type: :feature do
       fill_in 'input_str', with: 'This is a long sentence'
       click_button 'Wrap String'
     end
-    
+
     it 'displays the result' do
       expect(page).to have_content 'Result'
     end
-    
+
     it 'displays the result in on a different page' do
       expect(current_path).to eq('/wrappers')
     end
